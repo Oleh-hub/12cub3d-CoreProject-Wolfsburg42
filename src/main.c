@@ -6,12 +6,13 @@
 /*   By: oruban <oruban@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/06 11:27:22 by oruban            #+#    #+#             */
-/*   Updated: 2024/08/06 11:34:15 by oruban           ###   ########.fr       */
+/*   Updated: 2024/08/12 13:13:35 by oruban           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int main (int argc, char **argv)
 {
-
+	(void) argc;
+	(void)argv;
 	return (0);
 }

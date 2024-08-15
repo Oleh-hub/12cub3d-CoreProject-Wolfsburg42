@@ -54,20 +54,25 @@ CC			:=	gcc
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar rs $(NAME) $(OBJS)
+	@ar rs $(NAME) $(OBJS)
 
 # %.o: %.c
 .c.o:
-	$(CC) $(FLAGS) -c $< -o $@
+	@$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS)
-	rm -f $(OBJS_BONUS)
+	@rm -f $(OBJS)
+	@rm -f $(OBJS_BONUS)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: clean all
 
 bonus: $(OBJS_BONUS)
-	ar rs $(NAME) $(OBJS_BONUS)
+	@ar rs $(NAME) $(OBJS_BONUS)
+
+# bonus: $(OBJS_BONUS)
+# 	@if [ ! -f $(NAME) ] || ! cmp -s <(ar t $(NAME)) <(echo $(OBJS_BONUS)); then \
+# 		ar rs $(NAME) $(OBJS_BONUS); \
+# 	fi
