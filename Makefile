@@ -6,7 +6,7 @@
 #    By: oruban <oruban@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/06 11:58:58 by oruban            #+#    #+#              #
-#    Updated: 2024/08/15 14:10:29 by oruban           ###   ########.fr        #
+#    Updated: 2024/08/16 12:41:23 by oruban           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,7 @@ OBJS		=	$(SRC_FILES:%.c=$(OBJ_DIR)%.o)
 all:		$(NAME)
 
 $(LIBFT):
-			@make -C $(LIBFT_DIR) all bonus
+			@make -C $(LIBFT_DIR) all
 
 $(LIBMLX):
 			@make -C $(LIBMLX_DIR)
